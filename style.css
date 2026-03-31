@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(105, 17, 17);
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(119, 0, 0);
+    padding: 30px;
+}
+
+/* TITLE */
+.h1 {
+    font-size: 120px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.h1:hover {
+    color: white;
+}
+
+/* BUTTONS */
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(138, 23, 23);
+    color: black;
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background-color: whitesmoke;
+}
+
+/* INPUT */
+input {
+    background-color: violet;
+    color: white;
+    padding: 10px;
+}
+
+input:hover {
+    background-color: green;
+    transition: 0.3s;
+}
+
+/* LOGIN */
+#login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#signup-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+    padding: 20px;
+}
+
+/* MOVIE LIST */
+#movieList {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* MOVIE CARD */
+#movieList div {
+    background: #1c0000;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#movieList div:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+    transform: scale(1.05); 
+}
+
+#movieList div::first-line {
+    font-weight: bold;
+    color: red;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+/* CARD */
+.card {
+    background: #000000;
+    border-radius: 15px;
+    padding: 15px;
+    width: 220px;
+    cursor: pointer;
+    transition: 0.2s;
+    left: 0;
+    right: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* DETAIL PAGE */
+.section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    padding: 40px;
+    z-index: 1000;
+}
+
+.section.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENT BOX */
+.content-box {
+    background: #000000;
+    padding: 30px;
+    border-radius: 20px;
+
+    max-width: 600px;
+    width: 90%;
+
+    text-align: center;
+    margin: auto;
+
+    animation: popIn 0.75s ease;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff008c;
+    color: white;
+    cursor: pointer;
+}
+#detail {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: black;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+p {
+    font-size: 30px;
+}
+h1 {
+    font-size: 50px;
+}
