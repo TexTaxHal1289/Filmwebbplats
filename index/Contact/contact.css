@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    background-color: black;
+    color: rgb(174, 8, 8);
+    font-family: Arial, sans-serif;
+}
+ 
+/* Stor titel längst upp */
+.main-title {
+    text-align: center;
+    font-size: 400%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+ 
+/* Centrerar formuläret */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+ 
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+ 
+/* Gör så labels syns */
+label {
+    font-size: 20px;
+    color: rgb(227, 2, 2);
+}
+ 
+/* Inputs */
+input, textarea {
+    background-color: black;
+    color: rgb(94, 1, 1);
+    border: 2px solid rgb(98, 3, 3);
+    padding: 8px;
+}
+ 
+textarea {
+    height: 120px;
+    font-size: 16px;
+}
+ 
+button {
+    background-color: black;
+    color: red;
+    border: 2px solid red;
+    padding: 8px;
+    cursor: pointer;
+}
+nav {
+    padding: 20px;
+    color: rgb(159, 2, 2);
+}
+
+.Huvudwebbsida {
+  text-decoration: none;
+  color: rgb(141, 3, 3);
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;            
+}
+
+.Huvudwebbsida:visited {
+  color: rgb(124, 0, 0);              
+}
+
+.Huvudwebbsida:focus {
+  outline: none;             
+}
