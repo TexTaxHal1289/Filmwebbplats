@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
 const Filmer = [
     {
         id: "1",
-        title: "Stickyman - far from island",
+        title: "Stickyman - Far From Island",
         year: 2067,
         genre: "Island, romance",
         rating: 9.9,
@@ -65,7 +65,7 @@ const Filmer = [
     },
     {
         id: "3",
-        title: "Frying nemo",
+        title: "Frying Nemo",
         year: 2008,
         genre: "Adventure",
         rating: 8.9,
@@ -74,7 +74,7 @@ const Filmer = [
     },
     {
         id: "4",
-        title: "The lubricator",
+        title: "The Lubricator",
         year: 1994,
         genre: "Horror",
         rating: 6.7,
@@ -92,7 +92,7 @@ const Filmer = [
     },
     {
         id: "6",
-        title: "The Last goon",
+        title: "The Last Goon",
         year: 2193,
         genre: "Adventure",
         rating: 9.5,
@@ -111,7 +111,7 @@ const Filmer = [
     },
     {
         id: "8",
-        title: "Jfk Colorized",
+        title: "JFK Colorized",
         year: 2020,
         genre: "History",
         rating: 8.3,
@@ -120,7 +120,7 @@ const Filmer = [
     },
     {
         id: "9",
-        title: "Long schlong",
+        title: "Long Schlong",
         year: 2024,
         genre: "Dogshit",
         rating: 4.2,
@@ -129,7 +129,7 @@ const Filmer = [
     },
     {
         id: "10",
-        title: "The towers incident",
+        title: "The Towers Incident",
         year: 2001,
         genre: "horror" + "terrorism",
         rating: 7.8,
