@@ -181,7 +181,7 @@ img {
     text-align: center;
     margin: auto;
 
-    animation: popIn 0.75s ease;
+    animation: popIn 1.5s ease;
 }
 
 
@@ -195,7 +195,7 @@ button {
     cursor: pointer;
 }
 #detail {
-    display: none; /* hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -211,14 +211,15 @@ button {
 
 @keyframes popIn {
     from {
-        transform: scale(0.8);
-        opacity: 0;
+        transform: scale(0.01) rotate(30deg) translateY(-500px);
+        opacity: 0.3;
     }
     to {
-        transform: scale(1.0);
+        transform: scale(1.0) rotate(0deg) translateY(0px);
         opacity: 1;
     }
 }
+
 p {
     font-size: 30px;
 }
@@ -272,6 +273,7 @@ nav {
     width: 50px;
     text-align: center;
 }
+
 hr {
     border: none;
     height: 2px;
@@ -280,3 +282,17 @@ hr {
     width: 100vw;
     margin-left: calc(-50vw + 50%)
 }
+
+#detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow-y: auto; 
+    justify-content: center;
+    align-items: center;
+}
+

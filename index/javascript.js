@@ -131,10 +131,28 @@ const Filmer = [
         id: "10",
         title: "The Towers Incident",
         year: 2001,
-        genre: "Action",
+        genre: "horror" + "terrorism",
         rating: 7.8,
         img: "Img/Towers.jpg",
         description: "En actionfylld thriller som följer en grupp överlevande under en terroristattack mot två ikoniska skyskrapor, där de måste samarbeta för att överleva och avslöja sanningen bakom attacken."
+    },
+    {
+        id: "11",
+        title: "baking bread",
+        year: 2009,
+        genre: "bread" + "baking",
+        rating: 6.9,
+        img: "Img/Bakingbread.png",
+        description: "En gammal man som bakar bröd för att tjäna pengar för sin familj vilket leder att han blir spårad av brödpolisen"
+    },
+    {
+        id: "11",
+        title: "Assper the oiled",
+        year: 2016,
+        genre: "oil",
+        rating: 1.3,
+        img: "Img/Assper.png",
+        description: "en pedofil som blev överkörd av en bil jagar nu småbarn i sin spökform för att få möjligheten att smörja dem med massa babyoil"
     }
 
 ];
@@ -149,26 +167,38 @@ function showDetail(item) {
     box.className = "content-box";
 
     box.innerHTML = `
-        <h1>${item.title}</h1>
-        <img src="${item.img}" alt="${item.title}">
-        <p><strong>Genre:</strong> ${item.genre}</p>
-        <p><strong>${item.year}</strong></p>
-        <p>⭐ Rating: ${item.rating}</p>
+    <h1>${item.title}</h1>
+    <img src="${item.img}" alt="${item.title}">
+    <p><strong>Genre:</strong> ${item.genre}</p>
+    <p><strong>${item.year}</strong></p>
+    <p>⭐ Rating: ${item.rating}</p>
+   
+    <button id="toggleDesc" class="btn">Visa beskrivning</button>
 
-        <h3>Lämna en review</h3>
-        <input id="ratingInput" type="number" min="1" max="10" placeholder="Rating (1-10)">
-        <textarea id="reviewInput" placeholder="Skriv din review här..."></textarea>
-        <button id="saveReview" class="btn">Send review</button>
+<p id="descText" style="font-size: 28px; display:none;">
+    ${item.description || "No description available."}
+</p>
 
-        
-        <div id="reviewList"></div>
-    `;
-    box.innerHTML += `
-         <h3>Reviews:</h3>
-         <div id="reviewList"></div>
-         <p>${item.description || "No description available."}</p>
-    `;
+    <h3>Lämna en review</h3>
+    <input id="ratingInput" type="number" min="1" max="10" placeholder="Rating (1-10)">
+    <textarea id="reviewInput" placeholder="Skriv din review här..."></textarea>
+    <button id="saveReview" class="btn">Send review</button>
 
+    <div id="reviewList"></div>
+`;
+  
+const toggleBtn = box.querySelector("#toggleDesc");
+const descText = box.querySelector("#descText");
+
+toggleBtn.addEventListener("click", function () {
+    if (descText.style.display === "none") {
+        descText.style.display = "block";
+        toggleBtn.textContent = "Dölj beskrivning";
+    } else {
+        descText.style.display = "none";
+        toggleBtn.textContent = "Visa beskrivning";
+    }
+});
     // BACK BUTTON
     const backBtn = document.createElement("button");
     backBtn.textContent = "Back";
