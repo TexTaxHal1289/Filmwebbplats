@@ -69,7 +69,7 @@ const Filmer = [
         year: 2008,
         genre: "Adventure",
         rating: 8.9,
-        img: "img/FryingNemo.png",
+        img: "Img/FryingNemo.png",
         description: "En spännande äventyrsfilm som följer en liten fisk vid namn Nemo, som blir fångad av en girig kock och hamnar i en stekpanna, där han måste använda sin list och mod för att överleva och hitta vägen tillbaka till havet."
     },
     {
@@ -142,7 +142,7 @@ const Filmer = [
         year: 2009,
         genre: "bread" + "baking",
         rating: 6.9,
-        img: "Img/Bakingbread.png",
+        img: "Img/BakingBread.png",
         description: "En gammal man som bakar bröd för att tjäna pengar för sin familj vilket leder att han blir spårad av brödpolisen"
     },
     {

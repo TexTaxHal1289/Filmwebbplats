@@ -192,6 +192,10 @@ img {
     overflow-y: auto;
     min-height: 100vh;
     flex-direction: column;
+    background: linear-gradient(180deg, #0a0a0a, #000);
+    
+    border: 1px solid rgba(255,0,0,0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
 }
 
 
