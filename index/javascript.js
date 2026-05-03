@@ -209,7 +209,7 @@ toggleBtn.addEventListener("click", function () {
     box.appendChild(backBtn);
     detail.appendChild(box);
 
-    detail.style.display = "block";
+    detail.style.display = "flex";
 
     // SAVE REVIEW
 }

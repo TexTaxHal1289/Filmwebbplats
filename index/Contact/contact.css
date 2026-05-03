@@ -12,7 +12,7 @@ body {
 /* Stor titel längst upp */
 .main-title {
     text-align: center;
-    font-size: 400%;
+    font-size: 6rem;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -27,8 +27,8 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 350px;
+    gap: 2rem;
+    width: 50rem;
 }
  
 /* Gör så labels syns */
@@ -46,8 +46,8 @@ input, textarea {
 }
  
 textarea {
-    height: 120px;
-    font-size: 16px;
+    height: 10rem;
+    font-size: 2rem;
 }
  
 button {
@@ -58,6 +58,7 @@ button {
     cursor: pointer;
 }
 nav {
+    font-size: 3rem;
     padding: 20px;
     color: rgb(159, 2, 2);
 }
