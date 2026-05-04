@@ -257,10 +257,6 @@ nav {
   color: rgb(227, 2, 2 );
 }
 
-.Historik:visited {
-  color: rgb(124, 0, 0);              
-}
-
 .Historik:focus {
   outline: none;             
 }
