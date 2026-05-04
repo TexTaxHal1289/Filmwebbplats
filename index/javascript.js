@@ -153,6 +153,33 @@ const Filmer = [
         rating: 1.3,
         img: "Img/Assper.png",
         description: "en pedofil som blev överkörd av en bil jagar nu småbarn i sin spökform för att få möjligheten att smörja dem med massa babyoil"
+    },
+    {
+        id: "12",
+        title: "The charlie kirk theory",
+        year: 2024,
+        genre: "Kirking it",
+        rating: 5.0,
+        img: "Img/Charliehorror.jpg",
+        description: "En dokumentär som utforskar den kontroversiella teorin om att Charlie Kirk är en ondskefull varelse som manipulerar människor för att sprida hat och förvirring, och hur denna teori har påverkat samhället och politiken."
+    },
+    {
+        id: "13",
+        title: "Thipderman",
+        year: 2023,
+        genre: "superhero",
+        rating: 2.5,
+        img: "Img/THPIDERMAN.jpg",
+        description: "En actionfylld superhjältefilm som följer autistisk man som får spindel krafter och måste lära sig att kontrollera sina nya förmågor samtidigt som han bekämpar sin egen idioti medan en ond skurk försöker goona sönder hela hans familj och vänner."
+    },
+    {
+        id: "14",
+        title: "DISCORD: The Movie",
+        year: 2022,
+        genre: "Linus",
+        rating: 3.4,
+        img: "Img/DISCORD.jpg",
+        description: "En komedifilm som följer en grupp vänner som spenderar all sin tid på Discord, där de hamnar i en serie galna och absurda äventyr när de försöker navigera genom den digitala världen och hantera fienden job applikation som ständigt försöker sabotera deras online-liv."
     }
 
 ];
