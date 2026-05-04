@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background:radial-gradient(circle at top, rgba(120,0,0,0.15), transparent 40%),
+    #000;
+    color: rgba(174,8,8);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+
+    flex-direction: column;
+    gap:3rem;
+    margin: 0;
+}
+p {
+    font-size: 3rem;
+    color: red;
+    padding: 1rem;
+}
+h3 {
+    font-size: 3rem;
+    color: red;
+    padding: 1rem;
+}
+nav {
+   justify-content: flex-start;
+   
+   display:flex;
+   gap:1.5rem;
+   align-items: center;
+
+   padding: 35px;
+   width: 100%;
+}
+    .nav-btn {
+ padding: 16px 28px;
+ border: 1px solid rgba(255,0,0,0.25);
+ border-radius: 10px;
+ 
+ background: rgba(20,0,0,0.6);
+ font-size: 1.8rem;
+ text-decoration: none;
+ color: rgb(227, 2, 2 );
+}
+.review-card {
+    background: rgba(12,12,12,0.95);
+    border:1px solid rgba(255, 0,0,0.25);
+    border-radius: 18px;
+
+    padding: 1.5rem;
+    box-shadow:
+    0 0 25px rgba(255, 0,0,0.25),
+    0 10px 35px rgba(0,0,0,0.7);
+    transition: 0.25s ease;
+}
+button {
+    background: linear-gradient(90deg,#7a0000, #ff0000);
+    color: white;
+    border: none;
+    border-radius: 12px;
+
+    padding: 16px;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255,0,0,0.25);
+}

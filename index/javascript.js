@@ -69,7 +69,7 @@ const Filmer = [
         year: 2008,
         genre: "Adventure",
         rating: 8.9,
-        img: "img/FryingNemo.png",
+        img: "Img/FryingNemo.png",
         description: "En spännande äventyrsfilm som följer en liten fisk vid namn Nemo, som blir fångad av en girig kock och hamnar i en stekpanna, där han måste använda sin list och mod för att överleva och hitta vägen tillbaka till havet."
     },
     {
@@ -142,7 +142,7 @@ const Filmer = [
         year: 2009,
         genre: "bread" + "baking",
         rating: 6.9,
-        img: "Img/Bakingbread.png",
+        img: "Img/BakingBread.png",
         description: "En gammal man som bakar bröd för att tjäna pengar för sin familj vilket leder att han blir spårad av brödpolisen"
     },
     {
@@ -236,11 +236,58 @@ toggleBtn.addEventListener("click", function () {
     box.appendChild(backBtn);
     detail.appendChild(box);
 
-    detail.style.display = "block";
+    detail.style.display = "flex";
 
     // SAVE REVIEW
-}
+    const saveBtn = box.querySelector("#saveReview");
+    const reviewInput = box.querySelector("#reviewInput");
+    const ratingInput = box.querySelector("#ratingInput");
+    const reviewList = box.querySelector("#reviewList")
 
+    loadReviews();
+
+    saveBtn.addEventListener("click", function () {
+        const reviewText = reviewInput.value;
+        const rating = ratingInput.value;
+        
+        if (reviewText==="" || rating ==="") {
+            alert("Fyll i review och rating");
+            return;
+        }
+        const review = {
+            movieId: item.id,
+            movieTitle: item.title,
+            text: reviewText,
+            rating: rating
+        };
+        let reviews =JSON.parse(localStorage.getItem("reviews"))  || [];
+        reviews.push(review);
+        localStorage.setItem("reviews", JSON.stringify(reviews));
+
+        reviewInput.value = "";
+        ratingInput.value = "";
+        
+        loadReviews();
+
+    });
+
+        function loadReviews() {
+            let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+            reviewList.innerHTML = "";
+
+            const movieReviews = reviews.filter(r => r.movieId === item.id);
+            movieReviews.forEach(function(review) {
+                const div = document.createElement("div");
+                div.className ="review-card";
+
+                div.innerHTML = `
+                <p>⭐${review.rating}/10</p>
+                <p>${review.text}</p>
+                 `;
+                 reviewList.appendChild(div);
+            });
+        }}
 // BACK BUTTON FUNCTION
 function goBack() {
     detail.style.display = "none";
