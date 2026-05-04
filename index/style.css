@@ -97,7 +97,11 @@ input:hover {
     color: rgb(170, 0, 0);
     cursor: pointer;
     transition: 0.2s;
-   display: grid;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
 }
 
 #movieList div:hover {
@@ -125,6 +129,7 @@ img {
 .gallery {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
