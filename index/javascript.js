@@ -4,6 +4,7 @@ const movieList = document.getElementById("movieList");
 const gallery = document.getElementById("gallery");
 const detail = document.getElementById("detail");
 const nav = document.getElementById("nav");
+console.log(document.getElementById("logoutbtn"));
 
 // LOGIN
 loginbtn.addEventListener("click", function () {
@@ -17,23 +18,26 @@ loginbtn.addEventListener("click", function () {
         document.getElementById("content").style.display = "block";
         movieList.style.display = "grid";
         nav.style.display = "flex";
+        
+        
     } else {
         alert("Fel användarnamn eller lösenord");
     }
-
+    
 });
 
 
 window.addEventListener("load", function () {
     const loggedIn = localStorage.getItem("loggedIn");
-
+    
     if (loggedIn === "true") {
         document.getElementById("login-section").style.display = "none";
         document.getElementById("content").style.display = "block";
         movieList.style.display = "grid";
         nav.style.display = "flex";
+        document.getElementById("logoutbtn").style.display = "block";
     }
-
+    
     //logga ut
     
     document.getElementById("logoutbtn").addEventListener("click", function () {
