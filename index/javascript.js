@@ -180,7 +180,89 @@ const Filmer = [
         rating: 3.4,
         img: "Img/DISCORD.jpg",
         description: "En komedifilm som följer en grupp vänner som spenderar all sin tid på Discord, där de hamnar i en serie galna och absurda äventyr när de försöker navigera genom den digitala världen och hantera fienden job applikation som ständigt försöker sabotera deras online-liv."
-    }
+    },
+    {
+        id: "15",
+        title: "Rise of the PP",
+        year: 2025,
+        genre: "PP",
+        rating: 6.1,
+        img: "Img/Riseofthe.webp",
+        description: "En dokumentär som utforskar den ökande trenden   av överdrivna apor och orealistiska förväntningar på manlig anatomi, och hur detta påverkar samhället."
+    },
+    {
+        id: "16",
+        title: "down", 
+        year: 2024,
+        genre: "House",
+        rating: 5.5,
+        img: "Img/Down.jpg",
+        description: "En dramatisk film som följer en grupp människor som kämpar för att överleva i en svår situation, där de måste ta svåra beslut och lär sig om hus, djur och fallande hus."
+    },
+    {
+        id: "17",
+        title: "JOHN THICC",
+        year: 2023,
+        genre: "Thicc",
+        rating: 9.0,
+        img: "Img/John.webp",
+        description: "En actionfylld film som följer en man som tränar sin rumpa till att bli så tjock att den kan användas som ett vapen, och hur han måste använda sin nya förmåga för att bekämpa brott och rädda världen från alla onda rumpor som hotar att ta över världen."
+     },
+     {
+        id: "18",
+        title: "The Edibles",
+        year: 2024,
+        genre: "Comedy",
+        rating: 7.2,
+        img: "Img/Edibles.webp",
+        description: "En komedifilm som följer en familj som har superkrafter men de är alla väldigt stora och klumpiga, och hur de måste lära sig att hantera sina krafter samtidigt som de försöker leva ett normalt liv och försöker gå ner i vikt men det går ej så bra."
+     },
+     {
+        id: "19",
+        title: "Breathe 2",
+        year: 2184,
+        genre: "Sci-Fi",
+        rating: 8.5,
+        img: "Img/Breathe2.jpg",
+        description: "En science fiction-film som följer en man och en polis som ständigt försöker få varandra att sluta andas."
+     },
+     {
+        id: "20",
+        title: "findingosama",
+        year: 2024,
+        genre: "Documentary",
+        rating: 6.7,
+        img: "Img/FindingOsama.jpg",
+        description: "En dokumentär som följer en grupp människor som försöker hitta en mysteriös person i en exotisk värld."
+     },
+     {
+        id: "21",
+        title: "Five Nights at Diddy's 2",
+        year: 2025,
+        genre: "Horror",
+        rating: 4.8,
+        img: "Img/Fivenights2.jpg",
+        description: "En skräckfilm som utspelar sig på en nedlagd nöjespark där besökarna blir jagade av animatroniska figurer som har blivit besatta av onda andar, och där en grupp ungdomar måste överleva natten för att avslöja parkens mörka hemligheter."
+     },
+     {
+        id: "22",
+        title: "Slow and curious",
+        year: 2024,
+        genre: "Comedy",
+        rating: 7.0,
+        img: "Img/SlowCurious.jpg",
+        description: "En komedifilm som följer två personer som är väldigt långsamma och nyfikna, och hur de hamnar i en serie galna och absurda äventyr när de försöker navigera genom livet och hantera alla utmaningar som kommer i deras väg, och hur de ska använda sina bilars autopilot för att ta sig fram i världen."
+     },
+     {
+        id: "23",
+        title: "Klux",
+        year: 2024,
+        genre: "Horror",
+        rating: 3.2,
+        img: "Img/Klux.jpg",
+        description: "Ngl vete fan om denna film är en skräckfilm eller en dokumentär hahaha lmao"
+     }
+
 
 ];
 
@@ -226,7 +308,7 @@ toggleBtn.addEventListener("click", function () {
         toggleBtn.textContent = "Visa beskrivning";
     }
 });
-    // BACK BUTTON
+   // back knapp
     const backBtn = document.createElement("button");
     backBtn.textContent = "Back";
     backBtn.className = "btn";
