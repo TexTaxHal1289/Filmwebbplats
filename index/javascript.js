@@ -51,7 +51,7 @@ const Filmer = [
         year: 2067,
         genre: "Island, romance",
         rating: 9.9,
-        img: "",
+        img: "Img/Stickyman.jpg",
         description: "En episk kärlekshistoria mellan Stickyman och en mystisk ö, där de måste övervinna faror och utmaningar för att vara tillsammans."
     },
     {
@@ -88,7 +88,7 @@ const Filmer = [
         genre: "Horror",
         rating: 5.4,
         img: "Img/bild.jpg",
-        description: "En skräckfilm som utspelar sig på en nedlagd nöjespark där besökarna blir jagade av animatroniska figurer som har blivit besatta av onda andar, och där en grupp ungdomar måste överleva natten för att avslöja parkens mörka hemligheter."
+        description: "En skräckfilm som utspelar sig på en nedlagd nöjespark där besökarna blir jagade av flera olika Barnälskare, där en mörk hemlighet ligger bakom deras agerande, och hur de ska lösa denna hemlighet."
     },
     {
         id: "6",
@@ -96,7 +96,7 @@ const Filmer = [
         year: 2193,
         genre: "Adventure",
         rating: 9.5,
-        img: "",
+        img: "Img/Lastgoon.webp",
         description: "En spännande äventyrsfilm som följer den sista överlevande medlemmen av en mäktig maffiafamilj, när han navigerar genom en farlig värld av rivaliserande gäng och korrupta myndigheter för att hämnas sin familj och återställa sin ära."
     },
     {
